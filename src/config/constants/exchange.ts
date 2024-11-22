@@ -4,7 +4,7 @@ import { USDC, USDT, WBTC_ARB, mainnetTokens, DAI_ARB, GTOKEN} from 'libraries/t
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
-  [ChainId.MAINNET]: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+  [ChainId.MAINNET]: '0x42FD3a61450c167fe3E8Aa260AD7cF3e3dbF37FD',
   [ChainId.TESTNET]: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
 }
 

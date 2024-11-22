@@ -162,9 +162,9 @@ export default function SendCommitButton<SendTransactionReturnType>({
                 Enabling <CircleLoader stroke="white" />
               </AutoRow>
             ) : approvalSubmittedForFee && approvedForFee ? (
-              'BITX Enabled'
+              '$DEF Enabled'
             ) : (
-              "Enable BITX"
+              "Enable $DEF"
             )}
           </CommitButton>}
         </StyledFlex>

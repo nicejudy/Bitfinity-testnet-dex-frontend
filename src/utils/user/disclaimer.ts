@@ -1,7 +1,7 @@
 import { atom, useAtom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
-const disclaimerAtom = atomWithStorage<number>('bitx:disclaimer', 0)
+const disclaimerAtom = atomWithStorage<number>('dexfinity:disclaimer', 0)
 
 const hideDisclaimerAtom = atom(
   (get) => {

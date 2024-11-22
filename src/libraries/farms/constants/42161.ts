@@ -4,7 +4,7 @@ import { SerializedFarmConfig } from '..'
 const farms: SerializedFarmConfig[] = [
   {
     pid: 0,
-    lpSymbol: 'BITX',
+    lpSymbol: 'DEF',
     lpAddress: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304',
     quoteToken: mainnetTokens.usdt,
     token: mainnetTokens.gtoken,
@@ -12,28 +12,28 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 1,
-    lpSymbol: 'BITX-ETH LP',
+    lpSymbol: 'DEF-ETH LP',
     lpAddress: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304',
     quoteToken: mainnetTokens.weth,
     token: mainnetTokens.gtoken,
   },
   {
     pid: 2,
-    lpSymbol: 'BITX-USDT LP',
+    lpSymbol: 'DEF-USDT LP',
     lpAddress: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304',
     quoteToken: mainnetTokens.usdt,
     token: mainnetTokens.gtoken,
   },
   {
     pid: 3,
-    lpSymbol: 'BITX-USDC LP',
+    lpSymbol: 'DEF-USDC LP',
     lpAddress: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304',
     quoteToken: mainnetTokens.usdc,
     token: mainnetTokens.gtoken,
   },
   {
     pid: 4,
-    lpSymbol: 'BITX-DAI LP',
+    lpSymbol: 'DEF-DAI LP',
     lpAddress: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304',
     quoteToken: mainnetTokens.dai,
     token: mainnetTokens.gtoken,

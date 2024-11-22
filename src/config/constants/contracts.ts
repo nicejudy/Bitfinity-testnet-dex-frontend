@@ -5,7 +5,7 @@ export default {
     [ChainId.MAINNET]: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304',
   },
   multiCall: {
-    [ChainId.MAINNET]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    [ChainId.MAINNET]: '0x14b40314862d0D6BDA9dA2a2452666fb297515D4',
   },
   multisender: {
     [ChainId.MAINNET]: '0x1e7F25Af19DD9c3229d43041867c2924af6dd304'

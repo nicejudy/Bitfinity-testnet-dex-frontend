@@ -14,9 +14,9 @@ export const noopStorage = {
 }
 
 const metadata = {
-  name: 'BitX Finance',
-  description: 'BitX Finance offers Swap, Liquidity, Farms, Pools, Bridge, Launchpad on Bitfinity Network.',
-  url: 'https://bitx.finance', // origin must match your domain & subdomain
+  name: 'Dexfinity Finance',
+  description: 'Dexfinity Finance offers Swap, Liquidity, Farms, Pools, Bridge, Launchpad on Bitfinity Network.',
+  url: 'https://dexfinity.finance', // origin must match your domain & subdomain
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 }
 

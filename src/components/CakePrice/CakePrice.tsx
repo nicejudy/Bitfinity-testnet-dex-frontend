@@ -39,7 +39,7 @@ const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
       href={`/swap?outputCurrency=${GTOKEN[chainId].address}`}
       target="_blank"
     >
-      <img src="/images/bitx.png" width="24px" alt="bitx" />
+      <img src="/images/def.png" width="24px" alt="def" />
       <Text ml="6px" color={color}>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : showSkeleton ? (

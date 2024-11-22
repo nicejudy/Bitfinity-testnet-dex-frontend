@@ -13,8 +13,8 @@ export const bitfinity = {
   },
   contracts: {
     multicall3: {
-      address: "" as Address,
-      blockCreated: 0,
+      address: "0x14b40314862d0D6BDA9dA2a2452666fb297515D4" as Address,
+      blockCreated: 4023297,
     },
   },
   fees: undefined,

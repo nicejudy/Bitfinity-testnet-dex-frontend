@@ -34,12 +34,12 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://bitx.finance'
+const domain = 'https://dexfinity.finance'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const [, hideBanner] = usePhishingBanner()
   const { isMobile, isMd } = useMatchBreakpoints()
-  const warningTextAsParts = `please make sure you're visiting ${domain} - check the URL carefully.`.split(/(https:\/\/bitx.finance)/g)
+  const warningTextAsParts = `please make sure you're visiting ${domain} - check the URL carefully.`.split(/(https:\/\/dexfinity.finance)/g)
   const warningTextComponent = (
     <>
       <Text as="span" color="white" small textTransform="uppercase">

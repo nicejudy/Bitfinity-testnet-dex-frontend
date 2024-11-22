@@ -46,6 +46,6 @@ export const socials = [
 	{
 		label: "Docs",
 		icon: ResourcesIcon,
-		href: "https://docs.bitx.finance",
+		href: "https://docs.dexfinity.finance",
 	},
 ];

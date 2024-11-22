@@ -56,7 +56,7 @@ function Balance({ balance }: { balance: CurrencyAmount<Currency> }) {
 }
 
 const MenuItem = styled(RowBetween)<{ disabled: boolean; selected: boolean }>`
-  padding: 4px 8px 4px 20px;
+  padding: 4px 20px 4px 20px;
   height: 56px;
   display: grid;
   grid-template-columns: auto minmax(auto, 1fr) minmax(0, 72px);
@@ -110,14 +110,14 @@ function CurrencyRow({
           {balance ? <Balance balance={balance} /> : account ? <CircleLoader /> : null}
         </RowFixed>
       </MenuItem>
-      {currency && !currency.isNative ? (
+      {/* {currency && !currency.isNative ? (
         <Flex alignItems="center" mr="8px">
-          {/* <CopyButton
+          <CopyButton
             width="16px"
             buttonColor="textSubtle"
             text={currency.wrapped.address}
             tooltipMessage='Token address copied'
-          /> */}
+          />
           <AddToWalletButton
             variant="text"
             p="0"
@@ -129,7 +129,7 @@ function CurrencyRow({
             tokenLogo={currency.wrapped instanceof WrappedTokenInfo ? currency.wrapped.logoURI : undefined}
           />
         </Flex>
-      ) : <div />}
+      ) : <div />} */}
     </Flex>
   )
 }

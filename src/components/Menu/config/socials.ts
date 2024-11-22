@@ -50,7 +50,7 @@ const config: (
         },
         {
           label: 'Docs',
-          href: 'https://docs.bitx.finance/',
+          href: 'https://docs.dexfinity.finance/',
           type: DropdownMenuItemType.EXTERNAL_LINK
         },
       ].map((item) => addMenuItemSupported(item, chainId)),

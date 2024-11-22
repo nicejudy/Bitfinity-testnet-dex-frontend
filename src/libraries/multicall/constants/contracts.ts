@@ -6,7 +6,7 @@ export const MULTICALL_ADDRESS: { [key in ChainId]?: Address } = {
   [ChainId.TESTNET]: '0xbFfE39cDD04f0183e0493c1Deb6E275c5cf84AdF',
 }
 
-export const MULTICALL3_ADDRESS = '0xcA11bde05977b3631167028862bE2a173976CA11'
+export const MULTICALL3_ADDRESS = '0x14b40314862d0D6BDA9dA2a2452666fb297515D4'
 
 export const MULTICALL3_ADDRESSES: {
   [key in ChainId]?: Address

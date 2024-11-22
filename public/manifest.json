@@ -1,8 +1,8 @@
 {
-  "short_name": "BITX",
-  "name": "BITX Finance",
-  "description": "Farm BITX with LP Tokens",
-  "homepage_url": "https://bitx.finance/",
+  "short_name": "Dexfinity",
+  "name": "Dexfinity Finance",
+  "description": "Farm $DEF with LP Tokens",
+  "homepage_url": "https://dexfinity.finance/",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",
@@ -20,5 +20,5 @@
       "sizes": "64x64"
     }
   ],
-  "iconPath": "/images/bitx.png"
+  "iconPath": "/images/def.png"
 }

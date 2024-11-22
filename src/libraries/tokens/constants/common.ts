@@ -3,11 +3,11 @@ import { ERC20Token } from 'libraries/swap-sdk'
 
 export const GTOKEN_ARB = new ERC20Token(
   ChainId.MAINNET,
-  '0xdb41ab644AbcA7f5ac579A5Cf2F41e606C2d6abc',
+  '0x6c064939FB9dACF7EA0Ec32f9553AeD7B0EF4CB4',
   18,
-  'BITX',
-  'BitX Token',
-  'https://bitx.finance/',
+  'DEF',
+  'Dexfinity Token',
+  'https://dexfinity.finance/',
 )
 
 export const USDC_ARB = new ERC20Token(

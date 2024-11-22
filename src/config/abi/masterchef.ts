@@ -3,7 +3,7 @@ export const masterChefABI = [
     inputs: [
       {
         internalType: "contract YoctaXToken",
-        name: "_bitx",
+        name: "_def",
         type: "address",
       },
       {
@@ -13,7 +13,7 @@ export const masterChefABI = [
       },
       {
         internalType: "uint256",
-        name: "_bitxPerTime",
+        name: "_defPerTime",
         type: "uint256",
       },
       {
@@ -201,7 +201,7 @@ export const masterChefABI = [
   },
   {
     inputs: [],
-    name: "bitx",
+    name: "def",
     outputs: [
       {
         internalType: "contract YoctaXToken",
@@ -214,7 +214,7 @@ export const masterChefABI = [
   },
   {
     inputs: [],
-    name: "bitxPerTime",
+    name: "defPerTime",
     outputs: [
       {
         internalType: "uint256",
@@ -347,7 +347,7 @@ export const masterChefABI = [
         type: "address",
       },
     ],
-    name: "pendingBITX",
+    name: "pendingDEF",
     outputs: [
       {
         internalType: "uint256",
@@ -385,7 +385,7 @@ export const masterChefABI = [
       },
       {
         internalType: "uint256",
-        name: "accBITXPerShare",
+        name: "accDEFPerShare",
         type: "uint256",
       },
     ],
@@ -491,11 +491,11 @@ export const masterChefABI = [
     inputs: [
       {
         internalType: "uint256",
-        name: "_bitxPerTime",
+        name: "_defPerTime",
         type: "uint256",
       },
     ],
-    name: "updateBITXPerTime",
+    name: "updateDEFPerTime",
     outputs: [],
     stateMutability: "nonpayable",
     type: "function",

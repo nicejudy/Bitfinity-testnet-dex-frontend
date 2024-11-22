@@ -244,13 +244,13 @@ function CurrencySearch({
             />
           </Row>
         )}
-        {showCommonBases && (
+        {/* {showCommonBases && (
           <CommonBases
             chainId={chainId}
             onSelect={handleCurrencySelect}
             selectedCurrency={selectedCurrency}
           />
-        )}
+        )} */}
       </AutoColumn>
       {getCurrencyListRows()}
     </>

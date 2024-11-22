@@ -9,13 +9,13 @@ export const fee: ChainMap<string> = {
 export const routers: ChainMap<any> = {
 	[ChainId.MAINNET]: [
 		{
-			label: "BitX Finance",
+			label: "Dexfinity Finance",
 			value: "0xed5eBceB2ea46D74DE55DD0572Fedc035ac3b37A",
 		},
 	],
 	[ChainId.TESTNET]: [
 		{
-			label: "BitX Finance",
+			label: "Dexfinity Finance",
 			value: "0xed5eBceB2ea46D74DE55DD0572Fedc035ac3b37A",
 		},
 	],

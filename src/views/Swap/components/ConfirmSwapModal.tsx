@@ -33,7 +33,7 @@ const SwapTransactionErrorContent = ({ onDismiss, message, openSettingModal }) =
             </Text>
           </Text>
           <LinkExternal
-            href="https://docs.bitx.finance"
+            href="https://docs.dexfinity.finance"
             style={{ width: '100%', justifyContent: 'center' }}
           >
             What are the potential issues with the token?

@@ -2,7 +2,7 @@ import { atom, useAtom } from 'jotai'
 import differenceInDays from 'date-fns/differenceInDays'
 import { atomWithStorage } from 'jotai/utils'
 
-const phishingBannerAtom = atomWithStorage<number>('bitx:phishing-banners', 0)
+const phishingBannerAtom = atomWithStorage<number>('dexfinity:phishing-banners', 0)
 
 const hidePhishingBannerAtom = atom(
   (get) => {

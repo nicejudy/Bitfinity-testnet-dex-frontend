@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.gradientPrimary};
+    background: ${({ theme }) => theme.colors.background};
     // background: url('/images/background.png');
     // background-repeat: no-repeat;
     // background-size: cover;
