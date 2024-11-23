@@ -86,7 +86,7 @@ export const darkColors = {
   gradientBubblegum: 'linear-gradient(90deg, #181e31 0%, #1c1b44 50%, #181e31 100%)',
   gradientInverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
   gradientCardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
-  gradientBlue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
+  gradientBlue: "linear-gradient(180deg, #156f9299 0%, #1b8ea899 100%)",
   gradientViolet: "linear-gradient(180deg, #6a169b 0%, #bb0e81 100%)",
   gradientVioletAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
   gradientGold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",

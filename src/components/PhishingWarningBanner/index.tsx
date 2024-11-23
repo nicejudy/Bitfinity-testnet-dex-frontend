@@ -7,9 +7,13 @@ const Container = styled(Flex)`
   overflow: hidden;
   height: 100%;
   align-items: center;
-  width: 100%;
+  // width: 100%;
   padding: 0 10px;
-  background: ${({ theme }) => theme.colors.gradientViolet};
+  margin: 0;
+  background: ${({ theme }) => theme.colors.gradientBlue};
+  ${({ theme }) => theme.mediaQueries.sm} {
+    margin: 10px 25px;
+  }
 `
 
 const InnerContainer = styled(Flex)`

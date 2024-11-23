@@ -12,8 +12,8 @@ import {
 
 export const MENU_HEIGHT = 64;
 export const MOBILE_MENU_HEIGHT = 44;
-export const TOP_BANNER_HEIGHT = 40;
-export const TOP_BANNER_HEIGHT_MOBILE = 60;
+export const TOP_BANNER_HEIGHT = 48;
+export const TOP_BANNER_HEIGHT_MOBILE = 80;
 export const SIDEBAR_WIDTH_FULL = 260;
 export const SIDEBAR_WIDTH_REDUCED = 54;
 
