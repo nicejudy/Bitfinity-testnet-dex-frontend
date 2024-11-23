@@ -54,7 +54,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <div id="portal-root" />
-          <script src="/script.js" />
+          <script src="/script.js" rel="noreferrer" />
           <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
         </body>
       </Html>
