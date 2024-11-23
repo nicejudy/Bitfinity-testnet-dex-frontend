@@ -25,6 +25,7 @@ module.exports = {
     "react/destructuring-assignment": 0,
     "react/jsx-no-bind": 0,
     "react/no-unused-prop-types": 0,
+    "react/jsx-no-target-blank": 0,
     // Typescript
     "@typescript-eslint/no-unused-vars": [
       "warn",
