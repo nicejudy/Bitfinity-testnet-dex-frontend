@@ -44,3 +44,7 @@ export const getSmartRouterAddress = (chainId?: number) => {
 export const getTreasuryAddress = (chainId?: number) => {
   return getAddressFromMap(addresses.treasury, chainId)
 }
+
+export const getPresaleAddress = (chainId?: number) => {
+  return getAddressFromMap(addresses.presale, chainId)
+}

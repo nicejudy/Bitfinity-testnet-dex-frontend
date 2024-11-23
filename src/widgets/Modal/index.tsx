@@ -7,3 +7,4 @@ export * from "./ModalV2";
 export { default as ModalActions } from "./ModalActions";
 export { default as ModalInput } from "./ModalInput";
 export { default as ModalInputForVault } from "./ModalInputForVault";
+export { default as ModalInputForTrigger } from "./ModalInputForTrigger";

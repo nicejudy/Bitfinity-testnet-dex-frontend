@@ -19,15 +19,15 @@ import { CurrencyLogo, DoubleCurrencyLogo } from '../Logo'
 const CurrencySelectButton = styled(Button).attrs({ variant: 'text' })`
   padding: 0 30px 0 8px;
   margin-right: 16px;
-  border: 1px solid ${({theme}) => theme.colors.cardBorder};
+  border: 1px solid ${({theme}) => theme.colors.primary3D};
   // background-color: ${({theme}) => theme.colors.primary0f};
   height: 36px;
 `
 
 const Container = styled(Box)`
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: ${({ theme }) => theme.colors.background};
   border-radius: 16px;
-  border: 1px solid ${({ theme }) => theme.colors.input};
+  border: 1px solid ${({ theme }) => theme.colors.background};
   &:hover {
     border: 1px solid ${({ theme }) => theme.colors.primary3D};
   }

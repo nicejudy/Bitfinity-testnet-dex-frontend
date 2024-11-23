@@ -16,21 +16,21 @@ import { NavProps } from "./types";
 
 const LeftSection = styled.div`
   position: absolute;
-  top: 0;
-  left: -500px;
-  background: radial-gradient(50.36% 50.36% at 50% 45%, rgb(0, 208, 255) 0%, rgba(10, 178, 232, 0.86) 10%, rgba(29, 126, 193, 0.6) 29%, rgba(45, 82, 159, 0.39) 47%, rgba(57, 48, 133, 0.22) 63%, rgba(66, 24, 115, 0.1) 78%, rgba(72, 9, 104, 0.03) 91%, rgba(74, 4, 100, 0) 100%);
-  width: 1000px;
-  height: 1000px;
+  top: 10vh;
+  left: -45vh;
+  background: ${({theme}) => theme.colors.gradientCircle};
+  width: 90vh;
+  height: 90vh;
   z-index: -1;
 `
 
 const RightSection = styled.div`
   position: absolute;
-  top: 0;
-  right: -500px;
-  background: radial-gradient(50.36% 50.36% at 50% 45%, rgb(0, 208, 255) 0%, rgba(10, 178, 232, 0.86) 10%, rgba(29, 126, 193, 0.6) 29%, rgba(45, 82, 159, 0.39) 47%, rgba(57, 48, 133, 0.22) 63%, rgba(66, 24, 115, 0.1) 78%, rgba(72, 9, 104, 0.03) 91%, rgba(74, 4, 100, 0) 100%);
-  width: 1000px;
-  height: 1000px;
+  top: 10vh;
+  right: -45vh;
+  background: ${({theme}) => theme.colors.gradientCircle};
+  width: 90vh;
+  height: 90vh;
   z-index: -1;
 `
 
@@ -164,6 +164,8 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
                 <Logo
                   href="/"
                 />
+              </Flex>
+              <Flex alignItems="center" height="100%">
                 <AtomBox display={{ xs: "none", md: "block" }}>
                   <TopMenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />
                 </AtomBox>
@@ -173,12 +175,15 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
                 <AtomBox display={{ xs: "block", md: "none" }}>
                   <TopMenuItems items={mobileLinks} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />
                 </AtomBox>
-              </Flex>
-              <Flex alignItems="center" height="100%">
                 <AtomBox mr="20px" display={{ xs: "none", lg: "block" }}>
                   <CakePrice chainId={chainId} showSkeleton={false} cakePriceUsd={cakePriceUsd} />
                 </AtomBox>
                 {/* <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} /> */}
+                {/* <AtomBox display={{ xs: "none", md: "block" }}>
+                  <Box mr="8px">
+                    <w3m-network-button />
+                  </Box>
+                </AtomBox> */}
                 {rightSide}
               </Flex>
             </StyledNav>
@@ -202,8 +207,8 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
             </Inner>
             {/* <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" /> */}
           </BodyWrapper>
-          <RightSection />
-          <LeftSection />
+          {/* <RightSection />
+          <LeftSection /> */}
         </Wrapper>
       </AtomBox>
     </MenuContext.Provider>

@@ -51,7 +51,7 @@ const getPathList = (): PathList => {
       '/lock/token': { basePath: true, title: 'View Token Lock' },
       '/lock/record/': { basePath: true, title: 'View Lock Info' },
       '/vaults': { basePath: true, title: 'Vaults' },
-      '/xtrade': { basePath: true, title: 'Leverage Trading' },
+      '/presale': { basePath: true, title: 'Presale' },
     },
     defaultTitleSuffix: 'Dexfinity',
   }

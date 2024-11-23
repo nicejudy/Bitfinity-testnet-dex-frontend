@@ -38,14 +38,14 @@ createWeb3Modal({
   enableOnramp: true, // Optional - false as default
   themeMode: 'dark',
   themeVariables: {
-    '--w3m-color-mix': '#020118',
+    '--w3m-color-mix': '#1a202c',
     '--w3m-color-mix-strength': 10,
     '--w3m-accent': '#03FEFF',
     '--w3m-border-radius-master': '1.5px'
   },
   chainImages: {
-    355110: "https://bitfinity.network/favicon.ico",
-    355113: "https://bitfinity.network/favicon.ico",
+    355110: "/images/chains/355110.png",
+    355113: "/images/chains/355113.png",
   }
 })
 

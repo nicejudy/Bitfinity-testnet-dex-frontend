@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useEffect } from "react";
 import { useMatchBreakpoints } from "contexts";
 import { MenuContext } from "widgets/Menu/context";
-import { StyledTopMenuItemContainer, StyledTopMenuItem } from "./styles";
+import { StyledTopMenuItemContainer, StyledTopMenuItem, StyledActiveItem } from "./styles";
 import { MenuItemProps } from "./types";
 
 const MenuItem: React.FC<React.PropsWithChildren<MenuItemProps>> = ({
@@ -52,6 +52,7 @@ const MenuItem: React.FC<React.PropsWithChildren<MenuItemProps>> = ({
       >
         {children}
       </StyledTopMenuItem>
+      {/* {!isDisabled && <StyledActiveItem />} */}
     </StyledTopMenuItemContainer>
   );
 };

@@ -1,6 +1,6 @@
 import { ChainId } from 'config/chains'
 
-import { mainnetTokens } from './constants/arb'
+import { mainnetTokens } from './constants/bitfinity'
 
 export const allTokens = {
   [ChainId.MAINNET]: mainnetTokens,

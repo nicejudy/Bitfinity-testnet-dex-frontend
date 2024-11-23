@@ -17,6 +17,30 @@
       "symbol": "DEF",
       "decimals": 18,
       "logoURI": "/images/355110/tokens/0x6c064939FB9dACF7EA0Ec32f9553AeD7B0EF4CB4.png"
+    },
+    {
+      "chainId": 355110,
+      "address": "0x51cCdE9Ca75d95BB55eCe1775fCBFF91324B18A6",
+      "name": "ICP",
+      "symbol": "ICP",
+      "decimals": 8,
+      "logoURI": "/images/355110/tokens/0x51cCdE9Ca75d95BB55eCe1775fCBFF91324B18A6.png"
+    },
+    {
+      "chainId": 355110,
+      "address": "0x56bF74Ef5d4aD161D2D8D5d576E70108F152Cd35",
+      "name": "ckBTC",
+      "symbol": "ckBTC",
+      "decimals": 8,
+      "logoURI": "/images/355110/tokens/0x56bF74Ef5d4aD161D2D8D5d576E70108F152Cd35.png"
+    },
+    {
+      "chainId": 355110,
+      "address": "0x3662AFEF38c94a6184CDFCE8DCC60E7C305b8299",
+      "name": "ckUSDC",
+      "symbol": "ckUSDC",
+      "decimals": 6,
+      "logoURI": "/images/355110/tokens/0x3662AFEF38c94a6184CDFCE8DCC60E7C305b8299.png"
     }
   ]
 }

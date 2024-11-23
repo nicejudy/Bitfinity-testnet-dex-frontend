@@ -1,5 +1,56 @@
 import styled from "styled-components";
+import { Box } from "components/Box";
 import { StyledMenuItemProps } from "./types";
+
+export const StyledActiveItem = styled(Box)`
+  position: absolute;
+  display: inline-block;
+  top: 5px;
+  right: 0px;
+  color: #fff;
+  border-radius: 50%;
+  background: #4CAF50;
+  padding: 5px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  // position: relative;
+  margin: 0 10px;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    padding: 0.05em;
+    animation: activeCall 2s ease-in-out infinite both;
+  }
+  @keyframes activeCall {
+    20% {
+      padding: 0.5em;
+    }
+    25% {
+      padding: 0.25em;
+    }
+    35% {
+      padding: 0.75em;
+    }
+    50% {
+      padding: 0.5em;
+    }
+    60% {
+      padding: 0.75em;
+    }
+    80% {
+      padding: 0.35em;
+    }
+    100% {
+      padding: 0.35em;
+    }
+  }
+`
 
 export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
   position: relative;

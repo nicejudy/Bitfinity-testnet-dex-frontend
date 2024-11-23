@@ -8,7 +8,8 @@ import {
   getLaunchpadFactoryAddress,
   getContributionAddress,
   getSmartRouterAddress,
-  getTreasuryAddress
+  getTreasuryAddress,
+  getPresaleAddress
 } from 'utils/addressHelpers'
 
 // ABI
@@ -33,6 +34,7 @@ import { launchpadABI } from 'config/abi/launchpad'
 import { contributionABI } from 'config/abi/contribution'
 import { smartRouterABI } from 'config/abi/smartRouter'
 import { treasuryABI } from 'config/abi/treasury'
+import { presaleABI } from 'config/abi/presale'
 
 export const getContract = <TAbi extends Abi | readonly unknown[], TWalletClient extends WalletClient>({
   abi,
@@ -118,4 +120,8 @@ export const getSmartRouterContract = (signer?: WalletClient, chainId?: number) 
 
 export const getTreasuryContract = (signer?: WalletClient, chainId?: number) => {
   return getContract({ abi: treasuryABI, address: getTreasuryAddress(chainId), signer })
+}
+
+export const getPresaleContract = (signer?: WalletClient, chainId?: number) => {
+  return getContract({ abi: presaleABI, address: getPresaleAddress(chainId), signer })
 }

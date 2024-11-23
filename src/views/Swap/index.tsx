@@ -40,7 +40,7 @@ const StyledBox1 = styled(Box)`
   background: ${({ theme }) => theme.colors.input};
   padding: 9px 0;
   border-radius: 30px;
-  border: 2px solid ${({ theme }) => theme.colors.background};
+  border: 2px solid ${({ theme }) => theme.colors.primary3D};
 `
 
 export default function Swap() {

@@ -13,7 +13,8 @@ import {
   getLaunchpadContract,
   getContributionContract,
   getSmartRouterContract,
-  getTreasuryContract
+  getTreasuryContract,
+  getPresaleContract
 } from 'utils/contractHelpers'
 
 import { ChainId } from 'config/chains'
@@ -145,4 +146,10 @@ export const useTreasury = () => {
   const { chainId } = useActiveChainId()
   const { data: signer } = useWalletClient()
   return useMemo(() => getTreasuryContract(signer, chainId), [signer, chainId])
+}
+
+export const usePresaleContract = () => {
+  const { chainId } = useActiveChainId()
+  const { data: signer } = useWalletClient()
+  return useMemo(() => getPresaleContract(signer, chainId), [signer, chainId])
 }
