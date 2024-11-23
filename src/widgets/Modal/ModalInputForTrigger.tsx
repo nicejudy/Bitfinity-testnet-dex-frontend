@@ -70,7 +70,7 @@ const ModalInputForTrigger: React.FC<React.PropsWithChildren<ModalInputProps>> =
     <div style={{ position: "relative" }}>
       <StyledTokenInput isWarning={isBalanceZero}>
         <Flex justifyContent="space-between" pl="16px">
-          <Text fontSize="14px"></Text>
+          {/* <Text fontSize="14px"></Text> */}
           {onSelectMax && <StyledBox onClick={onSelectMax}>
             <Text fontSize="14px">Max: {max}</Text>
           </StyledBox>}

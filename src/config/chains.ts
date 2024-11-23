@@ -36,7 +36,7 @@ export const bitfinity = {
   serializers: undefined,
 }
 
-export const bitfinity_testnet = {
+export const bitfinityTestnet = {
   blockExplorers: {
     default: {
       apiUrl: "https://explorer.testnet.bitfinity.network/api",
@@ -96,7 +96,7 @@ export const PUBLIC_NODES: Record<ChainId, string[] | readonly string[]> = {
     ...bitfinity.rpcUrls.default.http,
   ],
   [ChainId.TESTNET]: [
-    ...bitfinity_testnet.rpcUrls.default.http,
+    ...bitfinityTestnet.rpcUrls.default.http,
   ],
 }
 

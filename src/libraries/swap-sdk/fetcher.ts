@@ -1,5 +1,5 @@
 import { createPublicClient, PublicClient, http, getContract, Address } from 'viem'
-import { bitfinity, bitfinity_testnet, ChainId } from 'config/chains'
+import { bitfinity, bitfinityTestnet, ChainId } from 'config/chains'
 import { CurrencyAmount, Token } from 'libraries/swap-sdk-core'
 import invariant from 'tiny-invariant'
 import { Pair } from './entities/pair'
@@ -12,7 +12,7 @@ let TOKEN_DECIMALS_CACHE: { [chainId: number]: { [address: string]: number } } =
 }
 
 const mainnetClient = createPublicClient({ chain: bitfinity, transport: http() })
-const testnetClient = createPublicClient({ chain: bitfinity_testnet, transport: http() })
+const testnetClient = createPublicClient({ chain: bitfinityTestnet, transport: http() })
 
 const getDefaultClient = (chainId: ChainId): PublicClient => {
   switch (chainId) {

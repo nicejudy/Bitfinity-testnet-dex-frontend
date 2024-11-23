@@ -1,9 +1,8 @@
-import { ChainId } from 'config/chains'
+import { ChainId, bitfinity } from 'config/chains'
 import { Currency } from 'libraries/swap-sdk'
 import { TokenAddressMap } from 'libraries/token-lists'
 import memoize from 'lodash/memoize'
 import { Address, getAddress } from 'viem'
-import { bitfinity, bitfinity_testnet } from 'config/chains'
 import { chains } from './wagmi'
 
 // returns the checksummed address if the address is valid, otherwise returns undefined
