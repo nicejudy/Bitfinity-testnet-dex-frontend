@@ -1,6 +1,6 @@
 import { ChainId } from "config/chains"
 import { Percent, Token, WNATIVE } from 'libraries/swap-sdk'
-import { USDC, USDT, WBTC_ARB, mainnetTokens, DAI_ARB, GTOKEN} from 'libraries/tokens'
+// import { USDC, USDT, WBTC_ARB, mainnetTokens, DAI_ARB, GTOKEN} from 'libraries/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
@@ -9,32 +9,34 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
 }
 
 // used for display in the default list when adding liquidity
-export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [WNATIVE[ChainId.MAINNET], GTOKEN[ChainId.MAINNET], USDT[ChainId.MAINNET], USDC[ChainId.MAINNET], DAI_ARB, mainnetTokens.arb, WBTC_ARB],
-  [ChainId.TESTNET]: [WNATIVE[ChainId.MAINNET], GTOKEN[ChainId.MAINNET], USDT[ChainId.MAINNET], USDC[ChainId.MAINNET], DAI_ARB, mainnetTokens.arb, WBTC_ARB],
-}
+// export const SUGGESTED_BASES: ChainTokenList = {
+//   [ChainId.MAINNET]: [WNATIVE[ChainId.MAINNET], GTOKEN[ChainId.MAINNET], USDT[ChainId.MAINNET], USDC[ChainId.MAINNET], DAI_ARB, mainnetTokens.arb, WBTC_ARB],
+//   [ChainId.TESTNET]: [WNATIVE[ChainId.MAINNET], GTOKEN[ChainId.MAINNET], USDT[ChainId.MAINNET], USDC[ChainId.MAINNET], DAI_ARB, mainnetTokens.arb, WBTC_ARB],
+// }
 
 // used to construct intermediary pairs for trading
-export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
-  [ChainId.MAINNET]: [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
-  [ChainId.TESTNET]: [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
+export const BASES_TO_CHECK_TRADES_AGAINST = {
+  // [ChainId.MAINNET]: [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
+  [ChainId.MAINNET]: [],
+  // [ChainId.TESTNET]: [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
 }
 
-export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-	[ChainId.MAINNET]: [USDC[ChainId.MAINNET], WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
-	[ChainId.TESTNET]: [USDC[ChainId.MAINNET], WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
+export const BASES_TO_TRACK_LIQUIDITY_FOR = {
+	// [ChainId.MAINNET]: [USDC[ChainId.MAINNET], WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
+	[ChainId.MAINNET]: [],
+	// [ChainId.TESTNET]: [USDC[ChainId.MAINNET], WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET], WBTC_ARB],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET]],
-    [WBTC_ARB, WNATIVE[ChainId.MAINNET]],
-    [WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET]],
+    // [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET]],
+    // [WBTC_ARB, WNATIVE[ChainId.MAINNET]],
+    // [WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET]],
   ],
   [ChainId.TESTNET]: [
-    [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET]],
-    [WBTC_ARB, WNATIVE[ChainId.MAINNET]],
-    [WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET]],
+    // [WNATIVE[ChainId.MAINNET], USDC[ChainId.MAINNET]],
+    // [WBTC_ARB, WNATIVE[ChainId.MAINNET]],
+    // [WNATIVE[ChainId.MAINNET], USDT[ChainId.MAINNET]],
   ],
 }
 

@@ -2,7 +2,7 @@ import { ChainId } from 'config/chains'
 import { Currency, Token } from 'libraries/swap-sdk'
 import { Text } from 'components'
 import styled from 'styled-components'
-import { SUGGESTED_BASES } from 'config/constants/exchange'
+// import { SUGGESTED_BASES } from 'config/constants/exchange'
 import useNativeCurrency from 'hooks/useNativeCurrency'
 import { AutoColumn } from '../Layout/Column'
 import { CurrencyLogo } from '../Logo'
@@ -49,9 +49,9 @@ export default function CommonBases({
   onSelect: (currency: Currency) => void
 }) {
   const native = useNativeCurrency()
-  const FIRST_LINE = chainId ? [SUGGESTED_BASES[chainId][0], SUGGESTED_BASES[chainId][1]] : []
-  const SECOND_LINE_ETH = chainId ? [SUGGESTED_BASES[chainId][2], SUGGESTED_BASES[chainId][3], SUGGESTED_BASES[chainId][4]] : []
-  const THIRD_LINE = chainId ? [SUGGESTED_BASES[chainId][5], SUGGESTED_BASES[chainId][6]] : []
+  // const FIRST_LINE = chainId ? [SUGGESTED_BASES[chainId][0], SUGGESTED_BASES[chainId][1]] : []
+  // const SECOND_LINE_ETH = chainId ? [SUGGESTED_BASES[chainId][2], SUGGESTED_BASES[chainId][3], SUGGESTED_BASES[chainId][4]] : []
+  // const THIRD_LINE = chainId ? [SUGGESTED_BASES[chainId][5], SUGGESTED_BASES[chainId][6]] : []
 
   const nativeSelected = selectedCurrency?.equals(native)
 
@@ -64,7 +64,7 @@ export default function CommonBases({
             <Text>{native.symbol}</Text>
           </BaseWrapper>
         </ButtonWrapper>
-        {(chainId ? FIRST_LINE || [] : []).map((token: Token) => {
+        {/* {(chainId ? FIRST_LINE || [] : []).map((token: Token) => {
           const selected = selectedCurrency?.equals(token)
           return (
             <ButtonWrapper key={`buttonBase#${token.address}`}>
@@ -74,9 +74,9 @@ export default function CommonBases({
               </BaseWrapper>
             </ButtonWrapper>
           )
-        })}
+        })} */}
       </RowWrapper>
-      <RowWrapper>
+      {/* <RowWrapper>
         {(chainId ? SECOND_LINE_ETH || [] : []).map((token: Token) => {
           const selected = selectedCurrency?.equals(token)
           return (
@@ -101,7 +101,7 @@ export default function CommonBases({
             </ButtonWrapper>
           )
         })}
-      </RowWrapper>
+      </RowWrapper> */}
     </AutoColumn>
   )
 }
