@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import BigNumber from 'bignumber.js'
 // import { Currency, ERC20Token } from 'libraries/swap-sdk'
 import { mainnetTokens } from 'libraries/tokens'
-import { Flex, Card, Box, TokenLogo, Text, LinkExternal, CopyButton, Button, AutoRenewIcon } from "components"
+import { Flex, Card, Box, TokenLogo, Text, LinkExternal, CopyButton, Button, AutoRenewIcon, AtomBox } from "components"
 import { ModalInputForTrigger } from "widgets/Modal"
 import { useToast } from 'contexts'
 import { getFullDisplayBalance } from 'utils/formatBalance'
@@ -184,8 +184,13 @@ const Presale = () => {
           <StyledAppBody>
             <Box p="20px">
               <Flex flexDirection={["column", "column", "column","row"]} justifyContent={["center", "center", "center", "space-between"]}>
-                <StyledLogo size="56px" srcs={["/logo.png"]} alt="cyberglow" />
+                <AtomBox display={{ xs: "block", md: "none" }}>
+                  <Flex justifyContent="right">
+                    <Badge status={status}>{statusText}</Badge>
+                  </Flex>
+                </AtomBox>
                 <Flex width="100%">
+                  <StyledLogo size="56px" srcs={["/logo.png"]} alt="dexfinity" />
                   <Box ml="15px">
                     <Flex mb="10px">
                       <Text fontSize="20px" fontWeight="600">
@@ -201,7 +206,9 @@ const Presale = () => {
                   </Box>
                 </Flex>
                 <Flex width="100%" justifyContent="right" mt="10px">
-                  <Badge status={status}>{statusText}</Badge>
+                  <AtomBox display={{ xs: "none", md: "block" }}>
+                    <Badge status={status}>{statusText}</Badge>
+                  </AtomBox>
                 </Flex>
               </Flex>
               <Box mt="15px">
