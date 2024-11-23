@@ -85,10 +85,10 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   // transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(0, 0, 0);
   max-width: 100%;
-  ${({ theme }) => theme.mediaQueries.lg} {
-    // margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px`};
-    max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px)`};
-  }
+  // ${({ theme }) => theme.mediaQueries.lg} {
+  //   // margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px`};
+  //   max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px)`};
+  // }
 `;
 
 const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({

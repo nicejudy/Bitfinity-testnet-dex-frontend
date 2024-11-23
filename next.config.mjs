@@ -25,6 +25,9 @@ const config = {
   //     '@ledgerhq'
   //   ],
   // },
+  experimental: {
+    nextScriptWorkers: true,
+  },
   staticPageGenerationTimeout: 1000,
   reactStrictMode: true,
   swcMinify: true,

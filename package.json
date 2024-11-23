@@ -44,6 +44,7 @@
     "@wagmi/core": "2.6.17",
     "@web3modal/wagmi": "4.x",
     "ajv": "^6.12.3",
+    "aos": "^2.3.4",
     "big.js": "^5.2.2",
     "bignumber.js": "9.0.0",
     "clsx": "^1.2.1",
@@ -88,6 +89,7 @@
     "zod": "^3.22.3"
   },
   "devDependencies": {
+    "@builder.io/partytown": "^0.10.2",
     "@next/eslint-plugin-next": "13.1.2",
     "@stylelint/postcss-css-in-js": "^0.37.2",
     "@testing-library/jest-dom": "^5.16.2",

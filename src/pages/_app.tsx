@@ -13,7 +13,9 @@ import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { PersistGate } from 'redux-persist/integration/react'
 
 import { persistor, useStore } from 'state'
@@ -65,6 +67,8 @@ function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>
           // eslint-disable-next-line @next/next/no-sync-scripts
           <script src="https://public.bnbstatic.com/static/js/mp-webview-sdk/webview-v1.0.0.min.js" id="mp-webview" />
         )}
+        <link rel="stylesheet" href="/main.css"></link>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
       </Head>
       <DefaultSeo {...SEO} />
       <Providers store={store} dehydratedState={pageProps.dehydratedState}>
@@ -124,6 +128,13 @@ type AppPropsWithLayout = AppProps & {
 const ProductionErrorBoundary = Fragment
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
   if (Component.pure) {
     return <Component {...pageProps} />
   }
